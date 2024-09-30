@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<Pane fx:id="panePrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="devalrykemes.exchangeconverterapp.controller.WindowController">
+   <children>
+      <Label layoutX="72.0" layoutY="14.0" text="Conversor de Moeda">
+         <font>
+            <Font name="SansSerif Regular" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="ch" layoutX="9.0" layoutY="177.0" text="Escolha a formatação:">
+         <font>
+            <Font name="SansSerif Regular" size="16.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="choiceboxFormat" layoutX="8.0" layoutY="198.0" prefWidth="150.0" />
+      <ComboBox fx:id="comboboxOf" layoutX="8.0" layoutY="259.0" prefWidth="150.0" promptText="Selecione" />
+      <ComboBox fx:id="comboboxFrom" layoutX="210.0" layoutY="259.0" prefWidth="150.0" promptText="Selecione" />
+      <Label layoutX="8.0" layoutY="236.0" text="Converter de:">
+         <font>
+            <Font name="SansSerif Regular" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="236.0" text="Para:">
+         <font>
+            <Font name="SansSerif Regular" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldToConvert" layoutX="9.0" layoutY="302.0" prefHeight="26.0" prefWidth="150.0" promptText="Valor a Converter">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="textFieldConverted" editable="false" layoutX="211.0" layoutY="302.0" prefHeight="26.0" prefWidth="150.0" promptText="Valor Convertido">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font></TextField>
+      <ImageView fitHeight="100.0" fitWidth="122.0" layoutX="143.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/exchange-cambio-logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="464.0" layoutY="14.0" text="Histórico">
+         <font>
+            <Font name="SansSerif Regular" size="24.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="1.0" layoutY="427.0" text="Linkedin">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font></Hyperlink>
+      <Label alignment="BOTTOM_LEFT" layoutX="394.0" layoutY="432.0" text="Desenvolvido por: Alrykemes Cavalcanti">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font></Label>
+      <Button fx:id="buttonConverter" layoutX="130.0" layoutY="357.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="109.0" text="Converter">
+         <font>
+            <Font name="SansSerif Regular" size="16.0" />
+         </font>
+      </Button>
+      <ListView fx:id="listHistorich" editable="true" layoutX="388.0" layoutY="55.0" prefHeight="340.0" prefWidth="245.0" />
+   </children>
+</Pane>
