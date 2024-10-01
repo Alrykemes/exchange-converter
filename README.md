@@ -1,4 +1,9 @@
 <h1 align="center">Exchange Converter</h1>
+
+![Maven Central Version](https://img.shields.io/maven-central/v/org.openjfx/javafx-fxml?label=JavaFX)
+![Maven Central Version](https://img.shields.io/maven-central/v/com.google.code.gson/gson?label=Gson)
+![Maven Central Version](https://img.shields.io/maven-central/v/com.h2database/h2?label=H2DB)
+
 <h3 align="start">Projeto feito no curso de Java Orientação a Objetos da Oracle,
   o intuito era pegar a resposta de uma API e manipular para fazer um conversor,
   fiz umas coisas a mais como:</h3>
